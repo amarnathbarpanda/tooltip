@@ -1,6 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.app {
+    width: 100%;
+    height: 100vh;
+    background: rgb(240, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button */
+.btn {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 2rem;
+    background: rgb(95, 153, 7);
+    color: white;
+    border: 0;
+    box-shadow: 0px 3px 8px 1px gray;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: #192733;
+    padding: 5px;
+    z-index: 1;
+}
+
+/* Element on which the user hovers */
+.child {
+    position: relative;
+    display: inline-block;
+    margin: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.show{
+    visibility: visible;
+}
+
+#top {
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#top::before {
+    top: 80%;
+    left: 45%;
+}
+
+#bottom {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom::before {
+    top: -5%;
+    left: 45%;
+}
+
+#left {
+    top: 50%;
+    right: 110%;
+    transform: translateY(-50%);
+}
+
+#left::before {
+    top: 35%;
+    left: 94%;
+}
+
+#right {
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+}
+
+#right::before {
+    top: 35%;
+    left: -3%;
+}
