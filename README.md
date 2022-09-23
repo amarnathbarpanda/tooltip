@@ -1,3 +1,7 @@
+# A simple tooltip component
+- This tooltip is flexible as you can use it any element.
+ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

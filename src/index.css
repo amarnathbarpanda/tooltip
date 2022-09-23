@@ -24,6 +24,9 @@
     box-shadow: 0px 3px 8px 1px gray;
     cursor: pointer;
 }
+.btn:hover{
+    background: rgb(79, 128, 6);
+}
 
 /* Tooltip text */
 .text {
@@ -58,6 +61,7 @@
 
 .show{
     visibility: visible;
+
 }
 
 #top {

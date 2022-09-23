@@ -6,8 +6,9 @@ const App = () => {
 
     return (
         <div className='app'>
-            <Tooltip text="Hello World!" position="right">
-            <Button />
+            <Tooltip text="Hello World!" position="bottom">
+            {/* <Button /> */}
+            <h1>Hover Me!</h1>
             </Tooltip>
         </div>
     )
